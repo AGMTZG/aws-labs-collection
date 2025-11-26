@@ -18,7 +18,7 @@ In less than 20 minutes you’ll have a fully functional website live on the int
 
 ## Lab Files (Download everything here)
 
-[Download ZIP with all files](https://raw.githubusercontent.com/AGMTZG/aws-labs-collection/master/my-first-s3-website/assets/main.zip)
+[Download ZIP with all files](https://raw.githubusercontent.com/AGMTZG/aws-labs-collection/blob/master/my-first-s3-website/assets/main.zip)
 
 ### Folder structure
 
