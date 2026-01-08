@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>My First S3 Website | Home</title>
+  <meta name="description" content="A simple static website demo for AWS S3 hosting labs." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="Go to home">
+        <span class="brand-mark" aria-hidden="true">¿¿</span>
+        <span class="brand-text">CloudCart</span>
+      </a>
+
+      <nav class="nav" aria-label="Primary">
+        <a class="nav-link active" href="index.html">Home</a>
+        <a class="nav-link" href="products.html">Products</a>
+        <a class="nav-link" href="about.html">About</a>
+        <a class="nav-link" href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero">
+      <div class="container hero-inner">
+        <div class="hero-copy">
+          <p class="badge">AWS Lab: S3 Static Website Hosting</p>
+          <h1>Ship a clean static site to S3 in minutes.</h1>
+          <p class="lead">
+            Use this mini-site to practice S3 buckets, public access, policies, versioning, and CloudFront.
+          </p>
+
+          <div class="hero-actions">
+            <a class="btn primary" href="products.html">Browse products</a>
+            <a class="btn" href="about.html">What is this lab?</a>
+          </div>
+
+          <ul class="hero-bullets">
+            <li>Simple HTML/CSS, no frameworks.</li>
+            <li>Perfect for lifecycle rules and logs practice.</li>
+            <li>Designed to look decent even when hosted from S3.</li>
+          </ul>
+        </div>
+
+        <div class="hero-card" role="region" aria-label="Lab checklist">
+          <h2>Lab checklist</h2>
+          <ol class="checklist">
+            <li>Create an S3 bucket</li>
+            <li>Enable static website hosting</li>
+            <li>Upload these files</li>
+            <li>Set bucket policy (public read)</li>
+            <li>Test URL and 404 page</li>
+          </ol>
+
+          <div class="note">
+            <p><strong>Tip:</strong> turn on <em>bucket versioning</em> and re-upload <code>styles.css</code> to see object versions.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-media" aria-hidden="true">
+        <!-- Optional: if you have hero-image.jpg -->
+        <img src="hero-image.jpg" alt="" />
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="grid-3">
+          <article class="card">
+            <h3>Fast to deploy</h3>
+            <p>Upload to S3 and you¿re live. Great for first AWS wins.</p>
+          </article>
+
+          <article class="card">
+            <h3>Readable code</h3>
+            <p>Plain HTML and CSS, so you can focus on AWS steps, not tooling.</p>
+          </article>
+
+          <article class="card">
+            <h3>Lab-friendly</h3>
+            <p>Perfect for practicing logging, backups, and lifecycle transitions.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section alt">
+      <div class="container">
+        <div class="split">
+          <div>
+            <h2>What you can practice</h2>
+            <p class="muted">
+              This site is intentionally small but realistic. Try common S3 website tasks.
+            </p>
+            <ul class="list">
+              <li>Bucket policy + public access block settings</li>
+              <li>Custom error document (404)</li>
+              <li>Object versioning and rollback</li>
+              <li>Lifecycle rules (e.g., move logs to Glacier)</li>
+              <li>Optional: CloudFront CDN in front of S3</li>
+            </ul>
+          </div>
+
+          <aside class="callout">
+            <h3>Try breaking it (safely)</h3>
+            <p>
+              Rename <code>styles.css</code> in S3 and refresh the page. Then fix it and confirm it recovers.
+            </p>
+            <p class="muted small">
+              In real life, this is why we use CI/CD and cache invalidations.
+            </p>
+          </aside>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p class="muted">© <span id="year"></span> CloudCart. Built for AWS S3 labs.</p>
+      <a class="muted" href="contact.html">Contact</a>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

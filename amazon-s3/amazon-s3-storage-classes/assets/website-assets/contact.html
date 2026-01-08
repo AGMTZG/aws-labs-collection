@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>My First S3 Website | Contact</title>
+  <meta name="description" content="Contact page for the AWS S3 static site lab." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="Go to home">
+        <span class="brand-mark" aria-hidden="true">¿¿</span>
+        <span class="brand-text">CloudCart</span>
+      </a>
+
+      <nav class="nav" aria-label="Primary">
+        <a class="nav-link" href="index.html">Home</a>
+        <a class="nav-link" href="products.html">Products</a>
+        <a class="nav-link" href="about.html">About</a>
+        <a class="nav-link active" href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" class="section">
+    <div class="container narrow">
+      <h1>Contact</h1>
+      <p class="muted">
+        This form is intentionally ¿fake¿ (no backend). Perfect for a static hosting lab.
+      </p>
+
+      <form class="card form" id="contactForm">
+        <label class="field">
+          <span>Name</span>
+          <input name="name" autocomplete="name" placeholder="Your name" required />
+        </label>
+
+        <label class="field">
+          <span>Email</span>
+          <input name="email" type="email" autocomplete="email" placeholder="you@example.com" required />
+        </label>
+
+        <label class="field">
+          <span>Message</span>
+          <textarea name="message" rows="5" placeholder="What do you want to test today?" required></textarea>
+        </label>
+
+        <div class="form-actions">
+          <button class="btn primary" type="submit">Send message</button>
+          <p class="muted small" id="formStatus" aria-live="polite"></p>
+        </div>
+      </form>
+
+      <div class="grid-2 top-gap">
+        <div class="card">
+          <h2>Lab challenges</h2>
+          <ul class="list">
+            <li>Enable S3 access logs for this bucket.</li>
+            <li>Upload logs into <code>assets/logs/</code> prefix.</li>
+            <li>Apply a lifecycle rule to transition logs.</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <h2>Optional</h2>
+          <ul class="list">
+            <li>Add CloudFront + custom domain.</li>
+            <li>Add redirects (via CloudFront Functions).</li>
+            <li>Add a simple serverless contact form (Lambda + API Gateway).</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p class="muted">© <span id="year"></span> CloudCart.</p>
+      <a class="muted" href="about.html">About</a>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
+

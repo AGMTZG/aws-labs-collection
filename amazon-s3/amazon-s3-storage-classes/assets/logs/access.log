@@ -1,0 +1,13 @@
+2026-01-08T15:01:12Z 192.168.1.24 GET /index.html 200 4123 "-" "Mozilla/5.0"
+2026-01-08T15:01:14Z 192.168.1.24 GET /styles.css 200 9821 "-" "Mozilla/5.0"
+2026-01-08T15:01:15Z 192.168.1.24 GET /hero-image.jpg 200 7348291 "-" "Mozilla/5.0"
+
+2026-01-08T15:02:01Z 187.210.45.11 GET /products.html 200 5231 "https://cloudcart.example/index.html" "Chrome/120.0"
+2026-01-08T15:02:02Z 187.210.45.11 GET /app.js 200 1872 "https://cloudcart.example/products.html" "Chrome/120.0"
+
+2026-01-08T15:02:44Z 45.77.90.12 GET /admin 403 312 "-" "curl/8.4.0"
+2026-01-08T15:02:45Z 45.77.90.12 GET /.env 403 298 "-" "curl/8.4.0"
+
+2026-01-08T15:03:10Z 201.140.22.8 GET /does-not-exist.html 404 512 "-" "Mozilla/5.0"
+2026-01-08T15:03:12Z 201.140.22.8 GET /contact.html 200 4411 "-" "Mozilla/5.0"
+

@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>My First S3 Website | Products</title>
+  <meta name="description" content="Sample products page for an AWS S3 static site lab." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="Go to home">
+        <span class="brand-mark" aria-hidden="true">¿¿</span>
+        <span class="brand-text">CloudCart</span>
+      </a>
+
+      <nav class="nav" aria-label="Primary">
+        <a class="nav-link" href="index.html">Home</a>
+        <a class="nav-link active" href="products.html">Products</a>
+        <a class="nav-link" href="about.html">About</a>
+        <a class="nav-link" href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" class="section">
+    <div class="container">
+      <div class="page-head">
+        <div>
+          <h1>Products</h1>
+          <p class="muted">Fake products, real AWS practice.</p>
+        </div>
+
+        <div class="filters" role="group" aria-label="Product filters">
+          <button class="chip active" data-filter="all" type="button">All</button>
+          <button class="chip" data-filter="storage" type="button">Storage</button>
+          <button class="chip" data-filter="security" type="button">Security</button>
+          <button class="chip" data-filter="network" type="button">Network</button>
+        </div>
+      </div>
+
+      <div class="grid-3" id="productGrid">
+        <article class="card product" data-category="storage">
+          <h3>S3 Starter Kit</h3>
+          <p class="muted small">Category: Storage</p>
+          <p>Bucket basics, static site hosting, and best-practice structure.</p>
+          <div class="product-meta">
+            <span class="price">$9</span>
+            <a class="btn small" href="contact.html">Request</a>
+          </div>
+        </article>
+
+        <article class="card product" data-category="security">
+          <h3>IAM Policy Pack</h3>
+          <p class="muted small">Category: Security</p>
+          <p>Sample least-privilege policies for uploads and read-only access.</p>
+          <div class="product-meta">
+            <span class="price">$12</span>
+            <a class="btn small" href="contact.html">Request</a>
+          </div>
+        </article>
+
+        <article class="card product" data-category="network">
+          <h3>CloudFront Boost</h3>
+          <p class="muted small">Category: Network</p>
+          <p>Cache, HTTPS, and a CDN layer in front of S3.</p>
+          <div class="product-meta">
+            <span class="price">$15</span>
+            <a class="btn small" href="contact.html">Request</a>
+          </div>
+        </article>
+
+        <article class="card product" data-category="storage">
+          <h3>Lifecycle Rules</h3>
+          <p class="muted small">Category: Storage</p>
+          <p>Move logs to cheaper tiers automatically and clean up old versions.</p>
+          <div class="product-meta">
+            <span class="price">$7</span>
+            <a class="btn small" href="contact.html">Request</a>
+          </div>
+        </article>
+
+        <article class="card product" data-category="security">
+          <h3>Public Access Audit</h3>
+          <p class="muted small">Category: Security</p>
+          <p>Spot common mistakes when exposing a static website from S3.</p>
+          <div class="product-meta">
+            <span class="price">$10</span>
+            <a class="btn small" href="contact.html">Request</a>
+          </div>
+        </article>
+
+        <article class="card product" data-category="network">
+          <h3>Logs + Metrics</h3>
+          <p class="muted small">Category: Network</p>
+          <p>Enable access logs and validate them in a separate bucket/prefix.</p>
+          <div class="product-meta">
+            <span class="price">$8</span>
+            <a class="btn small" href="contact.html">Request</a>
+          </div>
+        </article>
+      </div>
+
+      <div class="note top-gap">
+        <p><strong>Lab idea:</strong> create a second bucket named <code>cloudcart-logs-*</code> and enable access logs into <code>/logs/</code>.</p>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p class="muted">© <span id="year"></span> CloudCart.</p>
+      <a class="muted" href="index.html">Home</a>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
+

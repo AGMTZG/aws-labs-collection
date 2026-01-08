@@ -1,0 +1,11 @@
+[2026-01-08 15:02:45] ERROR 403 AccessDenied: User attempted to access /admin
+[2026-01-08 15:02:46] ERROR 403 AccessDenied: User attempted to access /.env
+
+[2026-01-08 15:03:10] ERROR 404 NotFound: Object does-not-exist.html not found
+[2026-01-08 15:03:10] WARN  Fallback served: index.html
+
+[2026-01-08 15:04:01] ERROR 403 AccessDenied: PublicAccessBlock enabled
+[2026-01-08 15:04:01] INFO  Bucket policy ignored due to block-public-policy=true
+
+[2026-01-08 15:06:12] ERROR 404 NotFound: error.html not configured as ErrorDocument
+

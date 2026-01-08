@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>My First S3 Website | About</title>
+  <meta name="description" content="About this AWS S3 static website lab." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="Go to home">
+        <span class="brand-mark" aria-hidden="true">¿¿</span>
+        <span class="brand-text">CloudCart</span>
+      </a>
+
+      <nav class="nav" aria-label="Primary">
+        <a class="nav-link" href="index.html">Home</a>
+        <a class="nav-link" href="products.html">Products</a>
+        <a class="nav-link active" href="about.html">About</a>
+        <a class="nav-link" href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" class="section">
+    <div class="container narrow">
+      <h1>About this lab</h1>
+      <p class="lead">
+        This project is a tiny, realistic static site you can host on AWS S3 to practice core cloud concepts.
+      </p>
+
+      <div class="card">
+        <h2>Goals</h2>
+        <ul class="list">
+          <li>Learn how S3 static website hosting works (and its limits).</li>
+          <li>Understand public access settings vs bucket policy permissions.</li>
+          <li>Practice safe experimentation: break, observe, fix, repeat.</li>
+        </ul>
+      </div>
+
+      <div class="grid-2 top-gap">
+        <div class="card">
+          <h3>Suggested exercises</h3>
+          <ol class="list">
+            <li>Make the site public with a bucket policy.</li>
+            <li>Set <code>index.html</code> as the index document.</li>
+            <li>Set a custom error document (try 404.html if you add one).</li>
+            <li>Enable access logs to a logs bucket.</li>
+            <li>Enable versioning and revert a change.</li>
+          </ol>
+        </div>
+
+        <div class="card">
+          <h3>Common gotchas</h3>
+          <ul class="list">
+            <li>Block Public Access overrides policies.</li>
+            <li>Website endpoint differs from REST endpoint.</li>
+            <li>CloudFront caching can ¿hide¿ recent changes.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="callout top-gap">
+        <h3>Pro tip</h3>
+        <p>
+          For a realistic workflow, create a second bucket for logs and a third bucket for backups. Then apply lifecycle rules
+          to move old logs to cheaper storage classes.
+        </p>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p class="muted">© <span id="year"></span> CloudCart.</p>
+      <a class="muted" href="products.html">Products</a>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

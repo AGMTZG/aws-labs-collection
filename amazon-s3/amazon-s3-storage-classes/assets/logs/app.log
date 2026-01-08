@@ -1,0 +1,14 @@
+2026-01-08T15:01:12Z INFO  AppLoaded version=1.0.0 page=index.html
+2026-01-08T15:01:15Z INFO  AssetLoaded hero-image.jpg size=7.0MB
+
+2026-01-08T15:02:03Z INFO  FilterApplied category=storage
+2026-01-08T15:02:05Z INFO  FilterApplied category=security
+
+2026-01-08T15:03:12Z INFO  PageView contact.html
+2026-01-08T15:03:18Z INFO  ContactFormSubmit status=demo-success
+
+2026-01-08T15:04:01Z WARN  StylesheetMissing styles.css
+2026-01-08T15:04:02Z INFO  PageRecovered after asset restore
+
+2026-01-08T15:05:44Z INFO  AppIdle userInactive=120s
+
