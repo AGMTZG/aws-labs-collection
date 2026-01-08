@@ -14,6 +14,9 @@ At the moment, this repository includes early-stage labs such as:
 - **S3 Bucket Versioning**  
   Understanding how versioning works and how it protects object data.
 
+- **S3 Storage Classes**
+  Exploring the different Amazon S3 storage classes and understanding when each classshould be used based on cost and access patterns.
+
 More labs will be added incrementally as they are refined and validated.
 
 ## Status
